@@ -26,6 +26,9 @@ public class Principal {
         empleado1.horasDeTrabajo=160;
         empleado1.costoHora=11.5;
         
+        System.out.println("Horas trabajadas"+empleado1.horasDeTrabajo);
+        System.out.println("Costo hora: "+empleado1.costoHora);
+        System.out.println("Anio Ingreso"+empleado1.anioIngreso+"\n");
         System.out.println("Anio Actual: " +anioActual);
         System.out.println("Calcular Ingresos: "+empleado1.calcularIngresos(anioActual)+" $");
         System.out.println("Maximo de hora trabajadas: "+ maximoDeHoraTrabajadas );
@@ -33,9 +36,9 @@ public class Principal {
         limite1=500;
         limite2=1000;
         limite3=2000;
-        System.out.println("Limite 1: "+limite1+"\n"+"Limite 2: "+limite2+"/n"+"Limite 3: "+limite3);
+        System.out.println("Limite 1: "+limite1+"\n"+"Limite 2: "+limite2+"\n"+"Limite 3: "+limite3);
         System.out.println("Calcular impuesto: "+empleado1.calcularImpuesto(limite1, limite2, limite3));
-        System.out.println("Calcular a pagar: "+empleado1.calcularPagar()+" $");
+        System.out.println("Calcular a pagar: "+empleado1.calcularPagar(empleado1.calcularIngresos(anioActual), empleado1.calcularBonoHorasExtra(maximoDeHoraTrabajadas), empleado1.calcularImpuesto(limite1, limite2, limite3))+" $");
         
         /*Empleado empleado1=new Empleado();
         empleado1.nombre="Juan";
