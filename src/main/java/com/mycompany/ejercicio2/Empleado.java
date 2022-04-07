@@ -55,17 +55,28 @@ public class Empleado
     public Double calcularImpuesto(int limite1, int limite2, int limite3)
     {
        Double impuestoF=0.0;
-       impuestoF=bonoF;
+       Double ingresosT=horasDeTrabajo*costoHora;
+     
+        if(ingresosT>=0 & ingresosT<=limite1)
+            impuestoF=ingresosT;
         
-        return impuestosF;
+        if(ingresosT>=limite1 & ingresosT<=limite2)
+            impuestoF=(5*ingresosT)/100;
+            
+        if(ingresosT>=limite2 & ingresosT<=limite3)
+            impuestoF=(12*ingresosT)/100;
+        
+        if(ingresosT>limite3)
+            impuestoF=(25*ingresosT)/100;
+        return impuestoF;
     }
     
-    public Double calcularPagar()
+    public Double calcularPagar(double ingresosF, Double bonoF, double impuestoF )
     {
-        Double valorF=0.0;
-        /*
+        Double valorF;
+        
         valorF=ingresosF+bonoF-impuestoF;
-        */
+        
         return valorF;
     }
 }
