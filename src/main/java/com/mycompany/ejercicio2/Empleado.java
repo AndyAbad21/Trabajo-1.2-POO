@@ -6,9 +6,10 @@
 
 package com.mycompany.ejercicio2;
 
+
 /**
  * 
- * @author Sammy Guergachi <sguergachi at gmail.com>
+ * @author Andy Abad
  */
 public class Empleado
 {
@@ -16,15 +17,7 @@ public class Empleado
     int horasDeTrabajo;
     Double costoHora;
     int anioIngreso;
-;
-    public Empleado()
-    {
-       /*static Double ingresosF=0.0;
-        /*Double bonoF;
-        int diferenciaDeHoras;
-        Double impuestosF;
-        Double valorF;*/
-    }
+    //DecimalFormat df;
     
     public Double calcularIngresos(int anioActual)
     {
@@ -71,12 +64,11 @@ public class Empleado
         return impuestoF;
     }
     
-    public Double calcularPagar(double ingresosF, Double bonoF, double impuestoF )
+    public double calcularPagar(double ingresosF, double bonoF, double impuestoF )
     {
-        Double valorF;
         
+        double valorF;
         valorF=ingresosF+bonoF-impuestoF;
-        
         return valorF;
     }
 }
