@@ -23,9 +23,9 @@ public class Principal {
         
         Empleado empleado1=new Empleado();
         empleado1.nombre="Juan";
-        empleado1.anioIngreso=2003;
-        empleado1.horasDeTrabajo=160;
-        empleado1.costoHora=11.5;
+        empleado1.anioIngreso=2010;
+        empleado1.horasDeTrabajo=100;
+        empleado1.costoHora=6.0;
         
         System.out.println("Nombre: "+empleado1.nombre);
         System.out.println("Horas trabajadas: "+empleado1.horasDeTrabajo);
@@ -44,10 +44,10 @@ public class Principal {
         
         
         Empleado empleado2=new Empleado();
-        empleado2.nombre="Pedro";
+        empleado2.nombre="Mariana";
         empleado2.anioIngreso=2010;
-        empleado2.horasDeTrabajo=100;
-        empleado2.costoHora=9.0;
+        empleado2.horasDeTrabajo=200;
+        empleado2.costoHora=5.0;
         
         System.out.println("Nombre: "+empleado1.nombre);
         System.out.println("Horas trabajadas: "+empleado2.horasDeTrabajo);
@@ -62,9 +62,9 @@ public class Principal {
         System.out.println("Calcular a pagar: "+empleado2.calcularPagar(empleado1.calcularIngresos(anioActual), empleado1.calcularBonoHorasExtra(maximoDeHoraTrabajadas), empleado1.calcularImpuesto(limite1, limite2, limite3))+" $"+"\n");
         
         Empleado empleado3=new Empleado();
-        empleado3.nombre="Jose";
-        empleado3.anioIngreso=2000;
-        empleado3.horasDeTrabajo=50;
+        empleado3.nombre="Carlos";
+        empleado3.anioIngreso=2018;
+        empleado3.horasDeTrabajo=150;
         empleado3.costoHora=15.0;
         
         System.out.println("Nombre: "+empleado1.nombre);
