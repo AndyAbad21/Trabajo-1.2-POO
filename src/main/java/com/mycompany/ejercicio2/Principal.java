@@ -27,6 +27,7 @@ public class Principal {
         empleado1.horasDeTrabajo=160;
         empleado1.costoHora=11.5;
         
+        System.out.println("Nombre: "+empleado1.nombre);
         System.out.println("Horas trabajadas: "+empleado1.horasDeTrabajo);
         System.out.println("Costo hora: "+empleado1.costoHora);
         System.out.println("Anio Ingreso: "+empleado1.anioIngreso+"\n");
@@ -48,6 +49,7 @@ public class Principal {
         empleado2.horasDeTrabajo=100;
         empleado2.costoHora=9.0;
         
+        System.out.println("Nombre: "+empleado1.nombre);
         System.out.println("Horas trabajadas: "+empleado2.horasDeTrabajo);
         System.out.println("Costo hora: "+empleado2.costoHora);
         System.out.println("Anio Ingreso: "+empleado2.anioIngreso+"\n");
@@ -65,6 +67,7 @@ public class Principal {
         empleado3.horasDeTrabajo=50;
         empleado3.costoHora=15.0;
         
+        System.out.println("Nombre: "+empleado1.nombre);
         System.out.println("Horas trabajadas: "+empleado3.horasDeTrabajo);
         System.out.println("Costo hora: "+empleado3.costoHora);
         System.out.println("Anio Ingreso: "+empleado3.anioIngreso+"\n");
