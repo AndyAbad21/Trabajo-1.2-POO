@@ -18,7 +18,7 @@ public class Principal {
     public static void main(String[] args) {
         // TODO code application logic here
         int anioActual=2022;
-        int maximoDeHoraTrabajadas=150;
+        int maximoDeHoraTrabajadas=100;
         int limite1, limite2, limite3;
         
         Empleado empleado1=new Empleado();
